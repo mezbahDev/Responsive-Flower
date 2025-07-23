@@ -10,8 +10,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-        integrity="sha512-HQ4iFURh7XrqgMKvXZx1UgR79gZD9XtCg7MxKkV1nTgUVb8+z+4nGQ0I6bNhtmXmM0B6IkPvE1o8bEwzYvZkZQ=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Google Fonts -->
@@ -19,7 +19,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Serif:wght@400;700&display=swap"
         rel="stylesheet" />
 
-    <!-- custom Tailwind config -->
+    <!-- Custom Tailwind Config -->
     <script>
         tailwind.config = {
             theme: {
@@ -39,8 +39,8 @@
 
     <style>
         * {
-            padding: 0;
             margin: 0;
+            padding: 0;
             box-sizing: border-box;
         }
     </style>
@@ -48,9 +48,40 @@
 
 
 
-
 <body>
 
+    <!-- header section  -->
+    <header class="flex flex-col items-center sm:pt-[30px]">
+
+        <!-- navbar section -->
+        <nav class="flex items-center justify-between px-4 py-3 
+                    sm:max-w-[1140px] sm:gap-[590px] sm:flex">
+            <img src="assets/logo.png" alt="logo name: faugei with a flower" class="w-[63px] sm:w-[135px]" />
+            <div class="flex items-center sm:gap-12">
+                <ul class="hidden sm:flex sm:text-[1rem] sm:gap-12 sm:text-[#8987A1]">
+                    <li><a href="#" class=" sm:hover:text-[#252432] sm:hover:font-bold">Home</a></li>
+                    <li><a href="#" class=" sm:hover:text-[#252432] sm:hover:font-bold">Shop</a></li>
+                    <li><a href="#" class=" sm:hover:text-[#252432] sm:hover:font-bold">About us</a></li>
+                </ul>
+                <div class="flex items-center gap-[10px] font-inter">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <p>Cart ($56)</p>
+                </div>
+            </div>
+        </nav>
+
+        <!-- banner section -->
+        <div class="mt-7 max-w-[393px] flex flex-col gap-7
+        sm:max-w-[1140px] sm:flex sm:flex-row-reverse sm:items-center sm:mt-[120px]">
+            <img src="assets/hero-flower.png" alt="a bucket flower" />
+            <div class="px-4 flex flex-col gap-3 sm:max-w-[570px]">
+                <p class="font-serif uppercase text-[24px] font-bold sm:text-[64px] sm:font-bold">always <span class="text-[#E95A08]">fresh <br>flowers</span></p>
+                <p class="text-[#000000] text-opacity-50 text-[14px] font-inter sm:text-[22px]">Indulge your senses with the beauty and
+                    fragrance of our fresh flower shop. From classic roses to
+                    exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. </p>
+            </div>
+        </div>
+    </header>
 </body>
 
 </html>
