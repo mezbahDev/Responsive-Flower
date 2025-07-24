@@ -48,7 +48,7 @@
 
 
 
-<body class="flex flex-col items-center sm:pt-[30px]">
+<body class="flex flex-col items-center sm:pt-[30px] overflow-x-hidden">
 
     <!-- header section  -->
     <header class=" mt-4">
@@ -73,7 +73,7 @@
         <!-- banner section -->
         <div class="mt-7 max-w-[393px] flex flex-col gap-7
         sm:max-w-[1140px] sm:flex sm:flex-row-reverse sm:items-center sm:mt-[120px]">
-            <img src="assets/hero-flower.png" alt="a bucket flower" class="w-[393px]" />
+            <img src="assets/hero-flower.png" alt="a bucket flower" class="max-w-[393px] w-full" />
             <div class="px-4 flex flex-col gap-3 sm:max-w-[570px]">
                 <p class="font-serif uppercase text-[24px] font-bold sm:text-[64px] sm:font-bold">always <span
                         class="text-[#E95A08]">fresh <br>flowers</span></p>
@@ -100,7 +100,7 @@
                     blooms, we offer a wide variety of fresh.</p>
             </div>
 
-            <div class="grid grid-cols-2 mt-7 sm:grid-cols-4 gap-5">
+            <div class="grid grid-cols-2 mt-7 sm:grid-cols-4 gap-y-4 gap-x-[5px] mx-[15px]">
                 <div class="max-w-[171px] sm:max-w-[270px] flex flex-col items-center gap-[20px]">
                     <img src="assets/sample-flower-image.png" alt="some flower in a jug" />
                     <div class="flex flex-col gap-[30px]">
@@ -201,7 +201,7 @@
         </section>
 
         <!-- flower and plant lover section -->
-        <section class="px-[17px] flex flex-col items-center gap-[18px] mt-10 max-w-[361px]
+        <section class="flex flex-col items-center gap-[18px] mt-10 max-w-[361px] mx-[15px]
                         sm:flex-row sm:max-w-[1140px] mt-[210px] sm:gap-[60px]">
             <img src="assets/flower-store.png" alt="a shopkeeper is cutting flowers" />
             <div class="flex flex-col gap-4 sm:max-w-[540px] sm:gap-5 sm:relative">
@@ -224,7 +224,7 @@
 
         </section>
 
-        <section class="mt-[143px]">
+        <section class="mt-[143px] mx-[15px]">
             <div class="flex flex-col items-center font-inter">
                 <p class="text-[24px] text-[#E95A08] font-bold sm:text-[50px]">Latest <span
                         class="text-black">Deals</span>
@@ -235,12 +235,13 @@
                     exotic blooms, we offer a wide variety of fresh.</p>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-7 sm:my-[120px] max-w-[1140px] mx-auto mt-[50px] px-4">
+            <div
+                class="grid grid-cols-1 sm:grid-cols-3 gap-5 sm:gap-7 sm:my-[120px] max-w-[1140px] mx-auto mt-[50px] px-4">
 
                 <div class="sm:flex sm:flex-col-reverse">
                     <div class="relative w-full overflow-hidden mt-5 sm:w-[367px] sm:h-[201px]">
                         <img src="assets/deal-ana.png" alt="ana plant buckets"
-                            class="w-[361px] h-full object-cover brightness-[0.5] rounded-[14px]" />
+                            class="w-[355px] h-full object-cover brightness-[0.5] rounded-[14px]" />
                         <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
                             <p class="text-[20px] font-serif font-bold">30% Off | Ana Plant</p>
                             <a href="#" class="underline font-semibold font-inter mt-7 hover hover:text-[#ffff00]">Shop
@@ -250,7 +251,7 @@
 
                     <div class="relative w-full overflow-hidden mt-5 sm:w-[367px] sm:h-[201px]">
                         <img src="assets/deal-bloom.png" alt="zabo plant buckets"
-                            class="w-[361px] h-full object-cover brightness-[0.5] rounded-[14px]" />
+                            class="w-[355px] h-full object-cover brightness-[0.5] rounded-[14px]" />
                         <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
                             <p class="text-[20px] font-serif font-bold">60% Off | Bloom Plant</p>
                             <a href="#" class="underline font-semibold font-inter mt-7 hover hover:text-[#ffff00]">Shop
@@ -261,7 +262,7 @@
 
                 <div class="relative overflow-hidden mt-5 sm:w-[753px]">
                     <img src="assets/deal-zabo.png" alt="zabo plant buckets"
-                        class="w-[361px] h-full object-cover brightness-[0.5] rounded-[14px] sm:w-[753px]" />
+                        class="w-[355px] h-full object-cover brightness-[0.5] rounded-[14px] sm:w-[753px]" />
                     <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
                         <p class="text-[20px] font-serif font-bold sm:text-[40px]">25% Off | Zabo Plant</p>
                         <a href="#"
@@ -290,6 +291,35 @@
 
         </section>
     </main>
+
+
+    <footer class="mx-[15px] py-[50px] flex flex-col gap-5 sm:flex-row sm:px-[160px] sm:py-[50px] sm:items-start sm:gap-[150px]">
+        <div class="flex flex-col gap-4">
+            <img src="assets/logo.png" alt="webpage logo" class="w-[180px]" />
+            <p class="text-[#000000] text-opacity-50 max-w-[359px] font-inter">Indulge your senses with the beauty and
+                fragrance of our fresh flower shop. </p>
+        </div>
+        <div class="text-[#000000] text-opacity-50 flex flex-col gap-8">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="flex flex-col gap-8 text-[#6B7280]">
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Help Center</a>
+        </div>
+        <div class="flex gap-6 items-center">
+            <a href="#"><img src="assets/icon-linkedin.png" alt="linkedin icon"></a>
+            <a href="#"><img src="assets/icon-twitter.png" alt="twitter icon"></a>
+            <a href="#"><img src="assets/icon-facebook.png" alt="facebook icon"></a>
+            <a href="#"><img src="assets/icon-youtube.png" alt="youtube icon"></a>
+        </div>
+    </footer>
 
 </body>
 
